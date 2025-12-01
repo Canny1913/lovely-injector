@@ -27,13 +27,6 @@ jobs:
       - name: Build
         run: cargo ndk -t arm64-v8a build --target ${{ matrix.target }} --package lovely-android --release
 
-      - name: Upload dobby artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: libdobby.so
-          path: ./crates/dobby-sys/dobby/build/android/arm64-v8a/libdobby.so
-          if-no-files-found: error
-
       - name: Upload lovely artifact
         uses: actions/upload-artifact@v4
         with:
