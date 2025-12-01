@@ -11,6 +11,6 @@ crate-type = ["cdylib"]
 lovely-core = { version ="0.8.0", path = "../lovely-core" }
 
 dobby-rs = "0.1.0"
-ctor = "0.2.7"
+ctor = "0.6.1"
 jni = "0.21.1"
 libloading = "0.8.6"
