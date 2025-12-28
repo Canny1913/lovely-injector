@@ -11,6 +11,9 @@ crate-type = ["cdylib"]
 lovely-core = { version ="0.8.0", path = "../lovely-core" }
 
 dobby-rs = "0.1.0"
-ctor = "0.2.7"
 jni = "0.21.1"
-libloading = "0.8.6"
+libloading = "0.8.8"
+android_log = "0.1.3"
+catch_panic = { git = "https://github.com/rushiiMachine/catch_panic.git", rev = "1a228e5" }
+log = "0.4.29"
+chrono = "0.4.42"

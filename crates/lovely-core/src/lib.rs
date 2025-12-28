@@ -84,7 +84,7 @@ impl Lovely {
 
         let log_dir = mod_dir.join("lovely").join("log");
 
-        log::init(&log_dir).unwrap_or_else(|e| panic!("Failed to initialize logger: {e:?}"));
+        log::init(&log_dir).unwrap_or_else(|e| panic!("Failed to initialize logger: {e:?}"));;
 
         info!("Lovely {LOVELY_VERSION}");
 
